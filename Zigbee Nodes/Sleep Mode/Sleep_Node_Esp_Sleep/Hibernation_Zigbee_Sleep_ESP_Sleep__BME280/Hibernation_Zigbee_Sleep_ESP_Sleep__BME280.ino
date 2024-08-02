@@ -1,32 +1,7 @@
 // this code helps to send data to coordinator , based static short address, frame serial number(enviroment id), 
 //you also receive command coordinator to do some operation like led control, query this node data like short address, macid, net key etc.,
 // if you search query command (55 03 00 00 00) in this (zigbee node) serial  mointer it will still send query to zigbee coordinator
-//PROBLEMS
-/*
- * pinMode(RED_LED, OUTPUT);
-   digitalWrite(RED_LED,LOW);
 
-   IF I SET RED_LED in the void setup it doesnot goes to LED low
-
-   that i why place this LED setup in this function
-   void ZIGBEE_Json_data_write(float temp, float hum) {
-  
-            if (!jsonDataRead) {
-              pinMode(RED_LED, OUTPUT);
-              digitalWrite(RED_LED,LOW);
-              Read_EspFlash_JsonFile();
-              jsonDataRead = true;
-          } 
-          because i use this function, json data read once from flash , after reading it set true, it doesnot enter this condition again
-
-
-    SECOND PROBLEM
-
-    if i place this 
-    pinMode(RED_LED, OUTPUT); line in void setup function , after setup BME280 i2c , below you place this line, RED_LED will go LOW, but it show wrong BME280 VALUES LIKE temp and humidity
-    
- * 
- */
 
 
 #define FIRMWARE_VERSION  "1.1.12-dev"
