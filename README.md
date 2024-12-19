@@ -5,7 +5,7 @@ In an Industrial Automation IoT project, Zigbee nodes send sensor data to a Zigb
 Arduino IDE 
 Version      ----1.8.19 [.exe application]
 
-# Library Versions:
+# Libraries Version:
 Arduino Json ---6.21.3
 Autoconnect  ---1.4.2
 PageBuilder  ---- 1.5.6
